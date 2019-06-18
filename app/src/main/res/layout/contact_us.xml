@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/getIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/getInTouch"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alwaysyourReach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getIn"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/alwayswithinyourreach"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@id/alwaysyourReach"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/numberPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:text="011149104905"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/backgroundView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/Eng_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:text="Abd-Elrahman_Younis@gmail.com"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/backgroundView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:padding="15dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/Eng_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_pin_circle_black_24dp"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:text="@string/address"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

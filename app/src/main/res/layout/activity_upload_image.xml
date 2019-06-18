@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadImageActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_weight="1"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/uploadProfile"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uploadprofileImage"
+            android:background="@drawable/buttons_shape2"
+
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+
+            />
+
+        <Button
+            android:id="@+id/uploadIDCard"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uploadIDCardscreen"
+            android:background="@drawable/buttons_shape"
+            android:layout_gravity="center"
+
+
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Sumbit_images"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:background="@drawable/buttons_shape"
+        android:layout_gravity="center"
+
+
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+        />
+
+
+
+
+</LinearLayout>

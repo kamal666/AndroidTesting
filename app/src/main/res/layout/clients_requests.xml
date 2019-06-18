@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <fragment
+        android:id="@+id/map_ClientRequest"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".captain_home_Activity" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/my_Location"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_my_location_black_24dp"
+        android:clickable="true"
+        android:backgroundTint="@android:color/white"
+        />
+
+</RelativeLayout>
